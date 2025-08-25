@@ -1,0 +1,33 @@
+<!-- src/main/resources/db/changelog/2025-08-23-seed-active_users.xml -->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="2025-08-23-02-seed-active-users" author="peter-savron">
+        <comment>Seed initial active users</comment>
+
+        <insert tableName="active_users">
+            <column name="id" value="97e83a63-ca8a-4b73-8078-280efd88e88a"/>
+            <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="username" value="alice_active"/>
+        </insert>
+
+        <insert tableName="active_users">
+            <column name="id" value="677b7c49-54da-49b7-9bb3-50d04879b055"/>
+            <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="username" value="bob_active"/>
+        </insert>
+
+        <insert tableName="active_users">
+            <column name="id" value="5dcdc792-16ae-41f6-b92a-f06ea9b0c0b1"/>
+            <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+            <column name="username" value="charlie_active"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
