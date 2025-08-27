@@ -1,5 +1,12 @@
+quarkus:
+  hibernate-orm:
+    database:
+      generation: none
+
 "%dev":
  quarkus:
   liquibase:
     contexts: dev
     migrate-at-start: true
+
+# my-agenda:
