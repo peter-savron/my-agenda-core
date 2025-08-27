@@ -24,4 +24,16 @@ import org.eclipse.microprofile.openapi.annotations.info.License;
 )
 @ApplicationPath("/v1")
 public class MyAgendaApplication extends Application {
+    // TAGS: add repository, find for user, add for user, update tags, delete tags LATER: share tags, repository->service->resource
+
+    // TODO in abstract class u can initiallize logger in constructor to have this.getClass()
+
+    // TODO phase 1:
+    //  activity and diary
+    //  tags for activity and diary without profile fk
+    //  add steps for activity
+    //  add task to group activty
+    // TODO phase 2:
+    //  person and groups
+    //  add people to task and diary
 }
