@@ -1,13 +1,12 @@
 package si.savron.mappers;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingConstants;
 import si.savron.dtos.activeuser.ActiveUserDto;
+import si.savron.dtos.activeuser.ActiveUserPostDto;
+import si.savron.mappers.common.BaseMapper;
+import si.savron.mappers.config.MapstructConfig;
 import si.savron.models.ActiveUserEntity;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.JAKARTA_CDI)
-public interface ActiveUserMapper {
-    @Mapping(target = "id", source = "user.id")
-    ActiveUserDto toDto(ActiveUserEntity user);
+@Mapper(config = MapstructConfig.class)
+public interface ActiveUserMapper extends BaseMapper<ActiveUserDto, ActiveUserEntity, ActiveUserPostDto> {
 }

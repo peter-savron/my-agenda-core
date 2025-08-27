@@ -1,12 +1,10 @@
 package si.savron.repositories;
 
-import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 import jakarta.enterprise.context.ApplicationScoped;
 import si.savron.models.ActiveUserEntity;
-
-import java.util.UUID;
+import si.savron.repositories.common.BaseEntityRepository;
 
 @ApplicationScoped
-public class ActiveUserRepository implements PanacheRepositoryBase<ActiveUserEntity, UUID> {
+public class ActiveUserRepository extends BaseEntityRepository<ActiveUserEntity> {
 
 }

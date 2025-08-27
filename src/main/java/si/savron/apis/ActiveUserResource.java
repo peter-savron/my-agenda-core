@@ -24,7 +24,7 @@ public class ActiveUserResource {
         UUID userId = UUID.fromString(jwt.getClaim("upn"));
 
         return Response.ok(
-                activeUserService.getUser(userId)
+                activeUserService.getUserById(userId)
         ).build();
     }
 
