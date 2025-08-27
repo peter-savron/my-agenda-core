@@ -7,6 +7,6 @@
     http://www.liquibase.org/xml/ns/dbchangelog
     https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <include file="active-users/changelog.xml" relativeToChangelogFile="true"/>
-    <include file="tags/changelog.xml" relativeToChangelogFile="true"/>
+    <include file="2025-08-26-create-table-tags.xml" relativeToChangelogFile="true"/>
+    <include file="2025-08-26-seed-data-tags.xml" relativeToChangelogFile="true" context="dev"/>
 </databaseChangeLog>

@@ -1,0 +1,83 @@
+<!-- src/main/resources/db/changelog/2025-08-23-seed-active_users.xml -->
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="2025-08-26-02-seed-active-users" author="peter-savron">
+            <insert tableName="tags">
+                <column name="id" value="7ba73f2e-8831-4ea2-8baa-d4b113f6af9b"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="tech"/>
+                <column name="description" value="Tags related to technology and software development."/>
+                <column name="owner_id" value="97e83a63-ca8a-4b73-8078-280efd88e88a"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="20fcb99e-a4e1-4a42-88ef-a9de3cc2134b"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="web_dev"/>
+                <column name="description" value="Tags for web development topics."/>
+                <column name="owner_id" value="97e83a63-ca8a-4b73-8078-280efd88e88a"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="4f95fbdd-ca8d-4996-8908-0774f710f232"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="quarkus"/>
+                <column name="description" value="Tags for Quarkus framework."/>
+                <column name="owner_id" value="97e83a63-ca8a-4b73-8078-280efd88e88a"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="7154031d-570d-432b-a4d8-2dd9e424b5b1"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="travel"/>
+                <column name="description" value="Tags for travel destinations and tips."/>
+                <column name="owner_id" value="677b7c49-54da-49b7-9bb3-50d04879b055"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="8c363955-4640-4dfd-aa88-a9975dc8c060"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="photography"/>
+                <column name="description" value="Tags for photography equipment and techniques."/>
+                <column name="owner_id" value="677b7c49-54da-49b7-9bb3-50d04879b055"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="cfab7aa2-92b0-4d95-93cb-f71b74126dec"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="hiking"/>
+                <column name="description" value="Tags for hiking trails and outdoor adventures."/>
+                <column name="owner_id" value="677b7c49-54da-49b7-9bb3-50d04879b055"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="490d425e-9d58-4ada-b39d-09bb021b6ba3"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="fitness"/>
+                <column name="description" value="Tags for health and fitness topics."/>
+                <column name="owner_id" value="5dcdc792-16ae-41f6-b92a-f06ea9b0c0b1"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="724e64c3-278f-4edc-9930-aa9e38641e45"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="cooking"/>
+                <column name="description" value="Tags for recipes and cooking methods."/>
+                <column name="owner_id" value="5dcdc792-16ae-41f6-b92a-f06ea9b0c0b1"/>
+            </insert>
+            <insert tableName="tags">
+                <column name="id" value="55656522-f9a1-4fc2-ba0d-0d509906b9f7"/>
+                <column name="created_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="updated_at" valueComputed="CURRENT_TIMESTAMP"/>
+                <column name="tag" value="reading"/>
+                <column name="description" value="Tags for books and literature."/>
+                <column name="owner_id" value="5dcdc792-16ae-41f6-b92a-f06ea9b0c0b1"/>
+            </insert>
+    </changeSet>
+
+</databaseChangeLog>
