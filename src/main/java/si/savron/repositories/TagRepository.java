@@ -2,14 +2,17 @@ package si.savron.repositories;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import si.savron.models.TagEntity;
-import si.savron.repositories.common.BaseEntityRepository;
-
-import java.util.List;
-import java.util.UUID;
+import si.savron.repositories.common.OwnedEntityRepository;
 
 @ApplicationScoped
-public class TagRepository extends BaseEntityRepository<TagEntity> {
-    public List<TagEntity> findAllByOwner(UUID ownerId){
-        return list("owner.id = ?1", ownerId);
+public class TagRepository implements OwnedEntityRepository<TagEntity> {
+    @Override
+    public String entityName() {
+        return TagEntity.class.getSimpleName();
+    }
+
+    @Override
+    public String fromStatement() {
+        return STR."from \{entityName()} e ";
     }
 }

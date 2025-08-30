@@ -4,12 +4,11 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-public record TagPostDto(
+import java.util.UUID;
+
+public record TagPutDto(
+        @NotNull UUID id,
         @NotBlank @Size(max = 63) String tag,
-        @NotNull @Size(max = 511) String description
+        @Size(max = 511) String description
 ) {
-    // TODO check if passes validation, null is set to ""
-    public TagPostDto{
-        if (description == null) description = "";
-    }
 }

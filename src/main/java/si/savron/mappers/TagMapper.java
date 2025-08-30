@@ -1,6 +1,5 @@
 package si.savron.mappers;
 
-import org.jboss.logging.Logger;
 import org.mapstruct.Mapper;
 import si.savron.dtos.tag.TagDto;
 import si.savron.dtos.tag.TagPostDto;
